@@ -1,0 +1,427 @@
+@charset "utf-8";
+/* Table of Contents
+==================================================
+	#Desktop (1600)
+	#Desktop (1366)
+	#Desktop (1024)
+	#Tablet (Portrait)
+	#Mobile (Portrait)
+	#Mobile (Landscape)
+
+
+
+/* #Additional - Large Screens beyond 1920px
+================================================== */
+@media only screen and (min-width: 1601px) and (max-width: 1920px) {
+:root										{ --container-width: 1600px; }
+.container                                  { max-width: 1600px; }
+
+
+
+}
+
+@media only screen and (min-width: 1367px) and (max-width: 1600px) {
+:root										{ --container-width: 1366px; }
+.container                                  { max-width: 1366px; }
+}
+
+
+/* #Additional - Large Screens beyond 1366px
+================================================== */
+@media only screen and (min-width: 1181px) and (max-width: 1366px) {
+:root										{ --container-width: 1208px; }
+.container                                  { max-width: 1280px; }
+#header										{ padding: 22px 30px 22px 30px; }
+#tags .content ul li 						{ width: 300px; }
+#tags .content ul li a						{ font-size: 16px; line-height: 26px;}
+#contactSec .content .contactinfo p 		{ font-size: 24px; line-height: 45px; }
+#portfolioSec .owl-theme .owl-nav 			{ margin-top: -100px; }
+.owl-theme .owl-nav button.owl-prev			{ left: -20px; }
+.owl-theme .owl-nav button.owl-next			{ right: -20px; }
+
+}
+
+
+
+/* #iPad Pro - Large Screens beyond 1024px
+================================================== */
+@media only screen and (min-width: 960px) and (max-width: 1180px) {
+:root										{ --container-width: 960px; }
+.container									{ max-width: 960px; }
+#header										{ padding: 20px 20px; }
+#header .top_right 							{ padding: 0 0px; }
+#header .search 							{ width: 130px; }
+#mainNav									{ padding: 10px 0; }
+#homeBanner 								{ min-height: 550px; }
+#homeBanner .left_cnt						{ width: 50%; padding: 90px 0; }
+#homeBanner .left_cnt h1 					{ margin: 0 0 35px 0; font-size: 70px; ine-height: 80px; }
+#homeBanner .left_cnt h3 					{ margin: 0 0 40px 0; font-size: 30px; line-height: 40px; }
+#homeBanner .rightclm						{ width: 50%; margin: 60px 0px; }
+#homeBanner .rightclm .download-links ul li	{ padding: 10px 0; }
+#videoSec 									{ min-height: auto; }
+#videoSec .content .numbers					{ padding-bottom: 30px; }
+#videoSec .content .numbers h2				{ font-size: 50px; line-height: 60px;  }
+#videoSec .content .numbers p				{ margin: 0 0 10px 0; font-size: 20px; line-height: 30px; }
+#videoSec .content .numbers .link			{ font-size: 20px; line-height: 30px; }
+#videoSec .content .numbers .link i			{ margin-left:0; font-size: 30px; line-height: 40px; }
+#portfolioSec								{ padding-top: 50px; padding-bottom: 50px; }
+#portfolioSec h2							{ font-size: 50px; line-height: 60px;  }
+.portfolio-list .item h3 					{ margin: 0 0 10px 0; font-size: 20px; line-height: 30px; }
+#portfolioSec .owl-theme .owl-nav			{ display: none; }
+#portfolioSec .owl-theme .owl-dots, #portfolioSec .owl-theme .owl-nav { margin-top: 30px; }
+#newsSec									{ padding-top: 50px; padding-bottom: 50px; }
+#newsSec .content h2						{ margin: 0 0 20px 0; font-size: 50px; line-height: 60px;  }
+#newsSec .content .news_clm					{ margin-bottom: 30px; }
+#newsSec .content .news_clm .date			{ font-size: 18px; line-height: 28px; }
+#newsSec .content .news_clm h3				{ font-size: 18px; line-height: 28px; }
+#newsSec .content .news_clm p 				{ margin: 0 0 10px 0; font-size: 16px; line-height: 26px; }
+#newsSec .content .row						{ margin-bottom: 30px; }
+#quoteSec .content							{ padding-top: 50px; }
+#quoteSec .content .left_cnt 				{ width: 70%; }
+#quoteSec .content .left_cnt h3 			{ font-size: 22px; line-height: 30px; }
+#quoteSec .content .left_cnt p 				{ font-size: 18px; line-height: 28px; }
+#quoteSec .content .left_cnt p:before		{ top: 12px; }
+#quoteSec .content .right_pic 				{ width: 30%; }
+#contactSec									{ padding-top: 50px; padding-bottom: 50px; }
+#contactSec .content 						{ padding-right: 0px; }
+#contactSec .content h2						{ margin: 0 0 10px 0; font-size: 50px; line-height: 60px; }
+#contactSec .content .contactinfo 			{ min-height: auto; }
+#contactSec .content .contactinfo p 		{ font-size: 20px; line-height: 38px; }
+#contactSec .content .form_box .form-group 	{ margin-bottom: 15px; }
+#contactSec .content .form_box .form-group:nth-child(3n) { margin-bottom: 15px; }
+#resourcesSec								{ padding-top: 50px; padding-bottom: 50px; }
+#resourcesSec .clm_box 						{ padding-top: 0px; padding-bottom: 30px; }
+#resourcesSec .clm_box h3					{ width: 277px; font-size: 24px; line-height: 34px; }
+#subscirbeSec								{ padding-top: 30px; padding-bottom: 30px; }
+#subscirbeSec h2							{ margin: 0 0 10px 0; font-size: 50px; line-height: 60px; }
+
+/*---------------- Stock Page ---------------*/
+
+#stockBanner 								{ padding-top: 45px; }
+#stockBanner .caption h1 					{ margin: 0 0 0px 0; font-size: 70px; line-height: 80px; }
+#stockBanner .chart 						{ padding-bottom: 17px; }
+#stockBanner .btm_text 						{ padding-bottom: 30px; font-size: 16px; line-height: 26px; }
+#tableContent 								{ padding-top: 30px; padding-bottom: 30px; }
+#tableContent .clm_box 						{ padding-top: 0px; }
+#tableContent .clm_box h2					{ margin: 0 0 30px 0; font-size: 50px; line-height: 60px; }
+#tableContent .clm_box .formbox 			{ padding-top: 10px; padding-bottom: 10px; }
+#tableContent .clm_box .formbox .field 		{ padding-bottom: 30px; }
+#tableContent .clm_box .formbox .field .small { width: 30%; }
+#tableContent .clm_box .formbox .field .medium { width: 30%;  }
+#tableContent .clm_box .tabel_row 			{ padding-bottom: 30px; }
+#tableContent .clm_box .tabel_row .table th,
+#tableContent .clm_box .tabel_row .table td { padding: 15px 15px; font-size: 18px; line-height: 28px; }
+#tableContent .clm_box .formbox .field .form-group .submit_btn { margin-top: 37px; padding: 21px 110px; font-size: 18px; }
+#tableContent .clm_box .small_text			{ padding: 0px 0 20px 0 }
+#tableContent .clm_box2 h2					{ margin: 0 0 30px 0; font-size: 50px; line-height: 60px; }
+#tableContent .clm_box2 .tabel_row .table th { padding: 15px 15px; font-size: 18px; line-height: 28px; }
+#tableContent .clm_box2 .tabel_row .table td { padding: 15px 15px; font-size: 18px; line-height: 28px; }
+#tableContent .clm_box .btn_row .whitebtn	{ margin-right: 20px; padding: 18px 80px; }
+
+
+/*---------------- Financial Page ---------------*/
+#financialkBanner 							{ min-height: 415px; padding-top: 0px; }
+#financialkBanner .left_cnt 					{ width: 50%; padding: 90px 0; }
+#financialkBanner .left_cnt h1 					{ margin: 0 0 20px 0; font-size: 50px; line-height: 55px; }
+#financialkBanner .rightclm						{ width: 50%; margin: 90px 0; padding: 20px 20px; }
+#financialkBanner .rightclm .download-links ul li { padding: 10px 0; font-size: 18px; line-height: 28px; }
+#financialkBanner .rightclm .download-links ul li img { width: 16px; height: 20px; }
+#quartelyResults							{ padding-top: 30px; padding-bottom: 30px; }
+#quartelyResults .accordain_box h2			{ margin: 0 0 30px 0; font-size: 30px; line-height: 35px; }
+#quartelyResults .accordain_box 			{ padding-bottom: 30px; }
+#quartelyResults .accordain_box .table_box .top_row .description { width: 38%; }
+#quartelyResults .accordain_box .table_box .top_row .view		{ width: 20%; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .description { width: 38%; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .view { width: 20%; }
+#quartelyResults .accordain_box .list-form .field .full { width: 31%; }
+#quartelyResults .accordain_box .pagination { padding: 2% 0; }
+#quartelyResults .accordain_box .pagination ul li { margin-right: 32px; }
+#quartelyResults .accordain_box .dispayresultes { padding-right: 0; font-size: 24px; line-height: 35px; }
+
+
+}
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+:root										{ --container-width: 100%; }
+.container									{ max-width: 100%; padding: 0 30px; }
+#header 									{ position: static; padding: 15px 15px; }
+#header .logo 								{ width: 60px; }
+#header .search								{ width: 200px; }
+#mainNav									{ display: none; }
+#homeBanner									{ min-height: 445px; }
+#homeBanner .left_cnt 						{ width: 50%; padding: 30px 0; }
+#homeBanner .left_cnt p 					{ font-size: 20px; line-height: 30px;}
+#homeBanner .left_cnt h1 					{ margin: 0 0 20px 0; font-size: 55px; line-height: 55px; }
+#homeBanner .left_cnt h3 					{ margin: 0 0 10px 0; font-size: 20px; line-height: 30px; }
+#homeBanner .left_cnt .price 				{ padding: 10px 15px 10px 40px; font-size: 18px; line-height: 28px; }
+#homeBanner .left_cnt .price:after			{ top: 10px; font-size: 20px; }
+#homeBanner .rightclm						{ width: 50%; margin: 20px 0; padding: 20px 20px; }
+#homeBanner .rightclm .download-links ul li { padding: 10px 0; font-size: 18px; line-height: 28px; }
+#tags .content ul li 						{ margin: 10px 10px; }
+#tags .content ul li a 						{ width: 100%; font-size: 16px; }
+#videoSec 									{ min-height: auto; }
+#videoSec video								{ height: 60vh;}
+#videoSec .content .numbers					{ padding-bottom: 30px; }
+#videoSec .content .numbers h2				{ font-size: 50px; line-height: 60px; }
+#videoSec .content .numbers p				{ margin: 0 0 10px 0; font-size: 20px; line-height: 30px; }
+#videoSec .content .numbers .link			{ font-size: 20px; line-height: 30px; }
+#videoSec .content .numbers .link i			{ margin-left:0; font-size: 30px; line-height: 40px; }
+#portfolioSec								{ padding-top: 30px; padding-bottom: 30px; }
+#portfolioSec h2							{ font-size: 35px; line-height: 45px; }
+.portfolio-list .item h3 					{ margin: 0 0 10px 0; font-size: 20px; line-height: 30px; }
+#portfolioSec .owl-theme .owl-nav			{ display: none; }
+#portfolioSec .owl-theme .owl-dots, #portfolioSec .owl-theme .owl-nav { margin-top: 30px; }
+#newsSec									{ padding-top: 30px; padding-bottom: 30px; }
+#newsSec .content h2						{ margin: 0 0 20px 0; font-size: 35px; line-height: 45px; }
+#newsSec .content .news_clm					{ margin-bottom: 30px; }
+#newsSec .content .news_clm .date			{ font-size: 18px; line-height: 28px; }
+#newsSec .content .news_clm h3				{ font-size: 18px; line-height: 28px; }
+#newsSec .content .news_clm p 				{ margin: 0 0 10px 0; font-size: 16px; line-height: 26px; }
+#newsSec .content .row						{ margin-bottom: 0px; }
+#quoteSec									{ padding-bottom: 30px; }
+#quoteSec .content							{ padding-top: 30px; }
+#quoteSec .content .left_cnt 				{ width: 50%; padding-right: 0px; }
+#quoteSec .content .left_cnt h3 			{ font-size: 22px; line-height: 30px; }
+#quoteSec .content .left_cnt p 				{ font-size: 18px; line-height: 28px; }
+#quoteSec .content .left_cnt p:before		{ top: 12px; }
+#quoteSec .content .right_pic 				{ width: 50%; }
+#contactSec									{ padding-top: 30px; padding-bottom: 30px; }
+#contactSec .content 						{ padding-right: 0px; }
+#contactSec .content h2						{ margin: 0 0 10px 0; font-size: 35px; line-height: 45px; }
+#contactSec .content .contactinfo 			{ min-height: auto; }
+#contactSec .content .contactinfo p 		{ font-size: 18px; line-height: 28px; }
+#contactSec .content .form_box .form-group 	{ margin-bottom: 15px; }
+#contactSec .content .form_box .form-group:nth-child(3n) { margin-bottom: 15px; }
+#contactSec .content .form_box .text 		{ padding-top: 0px; padding-bottom: 15px; }
+#resourcesSec								{ padding-top: 30px; padding-bottom: 30px; }
+#resourcesSec .clm_box 						{ padding-top: 0px; padding-bottom: 30px; }
+#resourcesSec .clm_box h3					{ width: 100%; font-size: 24px; line-height: 34px; }
+#resourcesSec .clm_box:last-child			{ padding-bottom: 0px; }
+#subscirbeSec								{ padding-top: 30px; padding-bottom: 30px; }
+#subscirbeSec h2							{ margin: 0 0 10px 0; font-size: 35px; line-height: 45px; }
+#subscirbeSec .formcnt 						{ padding-top: 0px; }
+#subscirbeSec .formcnt .fildrow .form-group .form-control { height: 55px; font-size: 18px; }
+#subscirbeSec .formcnt .fildrow .form-group p	{ font-size: 14px; line-height: 24px; }
+#subscirbeSec .formcnt .btm_text			{ margin-top: 0; font-size: 14px; line-height: 24px; }
+#footer										{ padding-top: 30px; padding-bottom: 30px; }
+.footerSection .ftr_menu 					{ width: 45%; padding-right: 0px; padding-bottom: 15px; }
+.footerSection .ftr_menu ul li a br			{ display: none; }
+.footerSection .ftr_text					{ width: 45%; padding-right: 0px; padding-bottom: 15px; }
+.footerSection .copyright					{ width: 45%; padding-right: 0px; }
+.footerSection .ftr_logo 					{ float: left; width: 100%; padding-bottom: 15px; }
+
+
+/*---------------- Stock Page ---------------*/
+
+#stockBanner 								{ padding-top: 45px; }
+#stockBanner .caption h1 					{ margin: 0 0 0px 0; font-size: 50px; line-height: 55px; }
+#stockBanner .chart 						{ padding-bottom: 17px; }
+#stockBanner .btm_text 						{ padding-bottom: 30px; font-size: 16px; line-height: 26px; }
+#tableContent 								{ padding-top: 30px; padding-bottom: 30px; }
+#tableContent .clm_box 						{ padding-top: 0px; }
+#tableContent .clm_box h2					{ margin: 0 0 30px 0; font-size: 30px; line-height: 35px; }
+#tableContent .clm_box .formbox 			{ padding-top: 10px; padding-bottom: 10px; }
+#tableContent .clm_box .formbox .field 		{ padding-bottom: 30px; }
+#tableContent .clm_box .formbox .field .form-group label { font-size: 18px; line-height: 28px; }
+#tableContent .clm_box .formbox .field .small { width: 30%; }
+#tableContent .clm_box .formbox .field .medium { width: 30%;  }
+#tableContent .clm_box .date 				{ font-size: 22px; line-height: 30px; }
+#tableContent .clm_box .tabel_row 			{ padding-bottom: 30px; }
+#tableContent .clm_box .tabel_row .table th,
+#tableContent .clm_box .tabel_row .table td { padding: 15px 15px; font-size: 18px; line-height: 28px; }
+#tableContent .clm_box .formbox .field .form-group .submit_btn { margin-top: 37px; padding: 21px 72px; font-size: 18px; }
+#tableContent .clm_box .small_text			{ padding: 0px 0 20px 0 }
+#tableContent .clm_box .small_text br		{ display: none; }
+#tableContent .clm_box .total_text 			{ padding: 10px 0 0px 0; font-size: 20px; line-height: 30px; }
+#tableContent .clm_box2 h2					{ margin: 0 0 30px 0; font-size: 30px; line-height: 35px; }
+#tableContent .clm_box2 .tabel_row .table th { padding: 15px 15px; font-size: 18px; line-height: 28px; }
+#tableContent .clm_box2 .tabel_row .table td { padding: 15px 15px; font-size: 18px; line-height: 28px; }
+#tableContent .clm_box .btn_row .whitebtn	{ margin-right: 20px; padding: 18px 38px; }
+
+
+/*---------------- Financial Page ---------------*/
+#financialkBanner 							{ min-height: 415px; padding-top: 0px; }
+#financialkBanner .left_cnt 					{ width: 50%; padding: 50px 0; }
+#financialkBanner .left_cnt h1 					{ margin: 0 0 20px 0; font-size: 50px; line-height: 55px; }
+#financialkBanner .rightclm						{ width: 50%; margin: 20px 0; padding: 20px 20px; }
+#financialkBanner .rightclm .download-links ul li { padding: 10px 0; font-size: 18px; line-height: 28px; }
+#financialkBanner .rightclm .download-links ul li img { width: 16px; height: 20px; }
+#quartelyResults							{ padding-top: 30px; padding-bottom: 30px; }
+#quartelyResults .accordain_box h2			{ margin: 0 0 30px 0; font-size: 30px; line-height: 35px; }
+#quartelyResults .accordain_box 			{ padding-bottom: 30px; }
+#quartelyResults .accordain_box .table_box .top_row { display: none !important;}
+#quartelyResults .accordain_box .card-body .cnt_row .small_text { width: 70%; font-size: 20px; }
+#quartelyResults .accordain_box .list-form .field .full { width: 30%; }
+#quartelyResults .accordain_box .list-form .field .form-group .form-control { width: 100%; height: 50px; padding: 10px 15px; font-size: 20px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .date { width: 100%; padding-right: 0px; padding-bottom: 15px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .form { width: 100%; padding-right: 0px; padding-bottom: 15px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .description { width: 100%; padding-right: 0px; padding-bottom: 15px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .filing { width: 100%; padding-right: 0px; padding-bottom: 15px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .view { width: 100%; }
+#quartelyResults .accordain_box .card h5 		{ font-size: 24px; line-height: 35px; }
+#quartelyResults .accordain_box .pagination	{ padding: 10% 0 5% 0; }
+#quartelyResults .accordain_box .pagination ul li { margin-right: 15px; margin-bottom: 15px; }
+#quartelyResults .accordain_box .dispayresultes { padding-bottom: 5%; padding-right: 0; font-size: 20px; line-height: 30px; text-align: left;}
+#quartelyResults .accordain_box .table_box .white_box .mobile-lable { display: inline-block; width: 100%; padding-right: 0px; padding-bottom: 10px; font-family: 'Avenir-LT-Std-65-Medium_5175'; color: #031D40;}
+
+}
+
+
+
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+:root										{ --container-width: 100%; }
+.container									{ max-width: 100%; padding: 0 30px; }
+#header 									{ position: static; padding: 15px 15px; }
+#header .logo 								{ width: 60px; }
+#header .search								{ width: 200px; }
+#mainNav									{ display: none; }
+#homeBanner .left_cnt 						{ width: 100%; padding: 30px 0; }
+#homeBanner .left_cnt p 					{ font-size: 20px; line-height: 30px;}
+#homeBanner .left_cnt h1 					{ margin: 0 0 20px 0; font-size: 55px; line-height: 55px; }
+#homeBanner .left_cnt h3 					{ margin: 0 0 10px 0; font-size: 20px; line-height: 30px; }
+#homeBanner .left_cnt .price 				{ padding: 10px 15px 10px 40px; font-size: 18px; line-height: 28px; }
+#homeBanner .left_cnt .price:after			{ top: 10px; font-size: 20px; }
+#homeBanner .rightclm						{ width: 100%; margin: 20px 0; padding: 20px 20px; }
+#homeBanner .rightclm .download-links ul li { padding: 10px 0; font-size: 18px; line-height: 28px; }
+#homeBanner .rightclm .download-links ul li img { width: 16px; height: 20px; }
+#tags .content ul li 						{ margin: 7px 0px; }
+#tags .content ul li a 						{ width: 100%; font-size: 16px; }
+#videoSec 									{ min-height: auto; }
+#videoSec .content							{ padding: 0 30px; }
+#videoSec .content .numbers					{ padding-bottom: 30px; }
+#videoSec .content .numbers h2				{ font-size: 50px; line-height: 60px; }
+#videoSec .content .numbers p				{ margin: 0 0 10px 0; font-size: 20px; line-height: 30px; }
+#videoSec .content .numbers .link			{ font-size: 20px; line-height: 30px; }
+#videoSec .content .numbers .link i			{ margin-left:0; font-size: 30px; line-height: 40px; }
+#portfolioSec								{ padding-top: 30px; padding-bottom: 30px; }
+#portfolioSec h2							{ font-size: 35px; line-height: 45px; }
+.portfolio-list .item h3 					{ margin: 0 0 10px 0; font-size: 20px; line-height: 30px; }
+#portfolioSec .owl-theme .owl-nav			{ display: none; }
+#portfolioSec .owl-theme .owl-dots, #portfolioSec .owl-theme .owl-nav { margin-top: 30px; }
+#newsSec									{ padding-top: 30px; padding-bottom: 30px; }
+#newsSec .content h2						{ margin: 0 0 20px 0; font-size: 35px; line-height: 45px; }
+#newsSec .content .news_clm					{ margin-bottom: 30px; }
+#newsSec .content .news_clm .date			{ font-size: 18px; line-height: 28px; }
+#newsSec .content .news_clm h3				{ font-size: 18px; line-height: 28px; }
+#newsSec .content .news_clm p 				{ margin: 0 0 10px 0; font-size: 16px; line-height: 26px; }
+#newsSec .content .row						{ margin-bottom: 0px; }
+#quoteSec									{ padding-bottom: 30px; }
+#quoteSec .content							{ padding-top: 30px; }
+#quoteSec .content .left_cnt 				{ width: 100%; padding-right: 0px; }
+#quoteSec .content .left_cnt h3 			{ font-size: 22px; line-height: 30px; }
+#quoteSec .content .left_cnt p 				{ font-size: 18px; line-height: 28px; }
+#quoteSec .content .left_cnt p:before		{ top: 12px; }
+#quoteSec .content .right_pic 				{ width: 100%; }
+#contactSec									{ padding-top: 30px; padding-bottom: 30px; }
+#contactSec .content 						{ padding-right: 0px; }
+#contactSec .content h2						{ margin: 0 0 10px 0; font-size: 35px; line-height: 45px; }
+#contactSec .content .contactinfo 			{ min-height: auto; }
+#contactSec .content .contactinfo p 		{ font-size: 18px; line-height: 28px; }
+#contactSec .content .form_box .form-group 	{ margin-bottom: 15px; }
+#contactSec .content .form_box .form-group:nth-child(3n) { margin-bottom: 15px; }
+#contactSec .content .form_box .text 		{ padding-top: 0px; padding-bottom: 15px; }
+#resourcesSec								{ padding-top: 30px; padding-bottom: 30px; }
+#resourcesSec .clm_box 						{ padding-top: 0px; padding-bottom: 30px; }
+#resourcesSec .clm_box h3					{ width: 100%; font-size: 24px; line-height: 34px; }
+#resourcesSec .clm_box:last-child			{ padding-bottom: 0px; }
+#subscirbeSec								{ padding-top: 30px; padding-bottom: 30px; }
+#subscirbeSec h2							{ margin: 0 0 10px 0; font-size: 35px; line-height: 45px; }
+#subscirbeSec .formcnt 						{ padding-top: 0px; }
+#subscirbeSec .formcnt .fildrow .half 		{ width: 100%; margin-right: 0; }
+#subscirbeSec .formcnt .fildrow .smaller	{ width: 100%; margin-right: 0; }
+#subscirbeSec .formcnt .fildrow .form-group .form-control { height: 55px; font-size: 18px; }
+#subscirbeSec .formcnt .fildrow .form-group p	{ font-size: 14px; line-height: 24px; }
+#subscirbeSec .formcnt .btm_text			{ margin-top: 0; font-size: 14px; line-height: 24px; }
+#footer										{ padding-top: 30px; padding-bottom: 30px; }
+.footerSection .ftr_menu 					{ width: 100%; padding-right: 0px; padding-bottom: 15px; }
+.footerSection .ftr_menu ul li a br			{ display: none; }
+.footerSection .ftr_text					{ width: 100%; padding-right: 0px; padding-bottom: 15px; }
+.footerSection .copyright					{ width: 100%; padding-right: 0px; }
+.footerSection .ftr_logo 					{ float: left; padding-bottom: 15px; }
+
+/*---------------- Stock Page ---------------*/
+
+#stockBanner 								{ padding-top: 45px; }
+#stockBanner .caption h1 					{ margin: 0 0 0px 0; font-size: 35px; line-height: 45px; }
+#stockBanner .chart 						{ padding-bottom: 17px; }
+#stockBanner .btm_text 						{ padding-bottom: 30px; font-size: 16px; line-height: 26px; }
+#tableContent 								{ padding-top: 30px; padding-bottom: 30px; }
+#tableContent .clm_box 						{ padding-top: 0px; }
+#tableContent .clm_box h2					{ margin: 0 0 30px 0; font-size: 30px; line-height: 35px; }
+#tableContent .clm_box .formbox 			{ padding-top: 10px; padding-bottom: 10px; }
+#tableContent .clm_box .formbox .field 		{ padding-bottom: 30px; }
+#tableContent .clm_box .formbox .field .form-group label { font-size: 18px; line-height: 28px; }
+#tableContent .clm_box .formbox .field .big { width: 100%; margin-right: 0; }
+#tableContent .clm_box .formbox .field .small { width: 100%; margin-right: 0; }
+#tableContent .clm_box .formbox .field .medium { width: 100%;  }
+#tableContent .clm_box .formbox .field .form-group .form-control { height: 50px; padding: 10px 10px; font-size: 18px; }
+#tableContent .clm_box .date 				{ font-size: 22px; line-height: 30px; }
+#tableContent .clm_box .tabel_row 			{ padding-bottom: 30px; }
+#tableContent .clm_box .tabel_row .table th,
+#tableContent .clm_box .tabel_row .table td { padding: 15px 15px; font-size: 18px; line-height: 28px; }
+#tableContent .clm_box .formbox .field .form-group .submit_btn { margin-top: 15px; padding: 15px 40px; font-size: 18px; }
+#tableContent .clm_box .small_text			{ padding: 0px 0 20px 0 }
+#tableContent .clm_box .small_text br		{ display: none; }
+#tableContent .clm_box .btn_row .whitebtn 	{ width: 100%; margin-right: 0px; margin-bottom: 15px; padding: 15px 15px; font-size: 18px;  }
+#tableContent .clm_box .total_text 			{ padding: 10px 0 0px 0; font-size: 20px; line-height: 30px; }
+#tableContent .clm_box2 h2					{ margin: 0 0 30px 0; font-size: 30px; line-height: 35px; }
+#tableContent .clm_box2 .tabel_row .table th { padding: 15px 15px; font-size: 18px; line-height: 28px; }
+#tableContent .clm_box2 .tabel_row .table td { padding: 15px 15px; font-size: 18px; line-height: 28px; }
+
+/*---------------- Financial Page ---------------*/
+#financialkBanner 							{ min-height: 568px; padding-top: 0px; }
+#financialkBanner .left_cnt 					{ width: 100%; padding: 30px 0; }
+#financialkBanner .left_cnt h1 					{ margin: 0 0 20px 0; font-size: 55px; line-height: 55px; }
+#financialkBanner .rightclm						{ width: 100%; margin: 20px 0; padding: 20px 20px; }
+#financialkBanner .rightclm .download-links ul li { padding: 10px 0; font-size: 18px; line-height: 28px; }
+#financialkBanner .rightclm .download-links ul li img { width: 16px; height: 20px; }
+#quartelyResults							{ padding-top: 30px; padding-bottom: 30px; }
+#quartelyResults .accordain_box h2			{ margin: 0 0 30px 0; font-size: 30px; line-height: 35px; }
+#quartelyResults .accordain_box 			{ padding-bottom: 30px; }
+#quartelyResults .accordain_box .card-body .cnt_row .small_text { width: 70%; font-size: 20px; }
+#quartelyResults .accordain_box .list-form .field .full { width: 100%; margin-right: 0; margin-bottom: 15px; }
+#quartelyResults .accordain_box .list-form .field .form-group .form-control { width: 100%; height: 50px; padding: 10px 15px; font-size: 18px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .date { width: 100%; padding-right: 0px; padding-bottom: 15px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .form { width: 100%; padding-right: 0px; padding-bottom: 15px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .description { width: 100%; padding-right: 0px; padding-bottom: 15px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .filing { width: 100%; padding-right: 0px; padding-bottom: 15px; }
+#quartelyResults .accordain_box .table_box .white_box .clm_row .view { width: 100%; }
+#quartelyResults .accordain_box .card h5 		{ font-size: 24px; line-height: 35px; }
+#quartelyResults .accordain_box .pagination	{ padding: 10% 0; }
+#quartelyResults .accordain_box .pagination ul li { margin-right: 15px; margin-bottom: 15px; }
+#quartelyResults .accordain_box .dispayresultes { padding-bottom: 10%; padding-right: 0; font-size: 20px; line-height: 30px; text-align: left;}
+#quartelyResults .accordain_box .table_box .white_box .mobile-lable { display: inline-block; width: 100%; padding-right: 0px; padding-bottom: 10px; font-family: 'Avenir-LT-Std-65-Medium_5175'; color: #031D40;}
+
+
+
+
+
+
+
+
+}
+
+
+
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+:root										{ --container-width: 100%; }
+.container									{ /*width: 540px;*/ max-width: 100%; padding: 0 15px; }
+#videoSec video 							{ height: 150vh; }
+
+
+
+
+
+
+}
